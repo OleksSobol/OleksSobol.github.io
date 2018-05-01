@@ -1,106 +1,73 @@
 <!DOCTYPE html>
 <html>
-<title>Porfolio</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css" media="all">
+<head>
+	<title>Porfolio</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+	  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+	<link rel="stylesheet" href="style.css" media="all">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+</head>
 
-<body class="w3-light-gray">
-
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <img src="data/pics/top-left.jpg" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>PROJECTS</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-</nav>
-
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+<body>
+<div id="home">
+  <div class="middle">
+    <h1>Hey there!</h1>
+    <h1>I'm Oleks </h1>
+    <h1> Front-end Developer</h1>
+    <h1> And this my portfolio</h1>
+  </div>
+  <div class="social-network">
+    <ul>
+      <li><a target="_blank" href="https://twitter.com/OleksCode"><img  class="social-img" src="https://goo.gl/NrDxVk" alt="Twitter"></a></li>
+      <li><a target="_blank" href="http://github.com/OleksSobol/"> <img  class="social-img" src="https://goo.gl/SJBEy6" alt="GitHub"></a></li>
+      <li><a target="_blank" href="https://www.freecodecamp.org/olekssobol"><img  class="social-img" src="https://goo.gl/AGbR7Y" alt="freeCodeCamp"></a></li>
+    </ul>
   </div>
 </div>
-
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center   " id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Oleks Sobol.</h1>
-    <p>Web-Developer and Parkour Athlete.</p>
-    <img src="data/pics/main.jpg" alt="boy" class="w3-image" width="992" height="1108">
-  </header>
-
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-grey">Oleksandr Sobol</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>Hello! My name is Oleks and I am web developer. I always was interested in technologies. My first project was magic cube at 11 years old.
-        From that time I switch a lot different programming languages and other stuff. And finally feels I found what I was looking for.
-        Web development is my passion. Everything I am doing with my passsion going to give the greatest result. Quality guarantee.
-        And I never stop learning!
-    </p>
-    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
- 
-    <p class="w3-wide">Web Development</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:70%"></div>
-    </div>
- 
-    
-   
-  <!-- End About Section -->
-  </div>
-  
-  <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="projects">
-    <h2 class="w3-text-grey">My Projects</h2>
-    <hr style="width:200px" class="w3-opacity">  
-    </div>
-  <!-- End Portfolio Section -->
-
-
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
-  <!-- End Contact Section -->
-  </div>
-  
-    <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  <!-- End footer -->
-  </footer>
-
-<!-- END PAGE CONTENT -->
+<div class="navbar">
+  <a href="#home" class="active">Home</a>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
 </div>
+
+<div id="about">
+  <div class="middle">
+    <h1>Something about me</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quidem accusamus dolor saepe quod natus eius? Quas unde pariatur deserunt quae earum, tenetur iure odit soluta. Eveniet illo repellendus odio.</p>
+  </div>
+</div>
+<div id="projects">
+  <div>
+    <h1>Websites:</h1>
+    <div class="img-carousel">
+      <a target="_blank" href="https://codepen.io/OleksSobol/full/paLjqv/"><img src="img/websites/twitch_tv.png" alt=""></a>
+      <a target="_blank" href="https://codepen.io/OleksSobol/full/paLjqv/"><img src="img/websites/perfect_match.png" alt=""></a>
+      <a target="_blank" href="https://codepen.io/OleksSobol/full/paLjqv/"><img src="img/websites/random_quote.png" alt=""></a>
+      <a target="_blank" href="https://codepen.io/OleksSobol/full/paLjqv/"><img src="img/websites/weather_app.png" alt=""></a>
+    </div>
+  </div>
+  <div>
+    <h1>Web Apps:</h1>
+    <div class="img-carousel">
+      <a target="_blank" href="https://codepen.io/OleksSobol/full/wmVard/"><img src="img/apps/simon_game.png" alt=""></a>
+       <a target="_blank" href="https://codepen.io/OleksSobol/full/MVzJaG/"><img src="img/apps/pomodoro.png" alt=""></a>
+       <a target="_blank" href="https://codepen.io/OleksSobol/full/pLrbGz/"><img src="img/apps/2d_breakout.png" alt=""></a>
+       <a target="_blank" href="https://codepen.io/OleksSobol/full/YadQBq/"><img src="img/apps/tic_tac_toe.png" alt=""></a>
+        <a target="_blank" href="https://codepen.io/OleksSobol/full/bvYRzv/"><img src="img/apps/color_game.png" alt=""></a>
+        <a target="_blank" href="https://codepen.io/OleksSobol/full/vRmxWo/"><img src="img/apps/calculator.png" alt=""></a>
+        <a target="_blank" href="https://codepen.io/OleksSobol/full/jzpYpy/"><img src="img/apps/todo_list.png" alt=""></a>
+        <a target="_blank" href="https://olekssobol.github.io/PatatapClone/"><img src="img/apps/potapa_clone.png" alt=""></a>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/main.js"></script>
 
 </body>
 </html>
