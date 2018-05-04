@@ -1,118 +1,59 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <title>Porfolio</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
-  <link rel="stylesheet" href="style.css" media="all">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
-  />
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.0.0/dist/phaser.min.js"></script>
 </head>
-
 <body>
-  <div id="particles-js"></div>
-  <div id="home">
-    <div class="middle">
-      <h1 class="main-screen-text">Hey there!</h1>
-      <h1 class="main-screen-text">I'm Oleks </h1>
-      <h1 class="main-screen-text"> Front-end Developer</h1>
-      <h1 class="main-screen-text"> And this my portfolio</h1>
-    </div>
-  </div>
-  <div class="social-network">
-    <ul>
-      <li>
-        <a target="_blank" href="https://twitter.com/OleksCode">
-          <img class="social-img" src="https://goo.gl/NrDxVk" alt="Twitter">
-        </a>
-      </li>
-      <li>
-        <a target="_blank" href="http://github.com/OleksSobol/">
-          <img class="social-img" src="https://goo.gl/SJBEy6" alt="GitHub">
-        </a>
-      </li>
-      <li>
-        <a target="_blank" href="https://www.freecodecamp.org/olekssobol">
-          <img class="social-img" src="https://goo.gl/AGbR7Y" alt="freeCodeCamp">
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class="navbar" id="myNavbar">
-    <a href="#home" class="active">Home</a>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navbar()">&#9776;</a>
-  </div>
 
-  <div id="about">
-    <div>
-      <h1>Something about me</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quidem accusamus dolor saepe quod natus eius? Quas
-        unde pariatur deserunt quae earum, tenetur iure odit soluta. Eveniet illo repellendus odio.</p>
-    </div>
-  </div>
-  <div id="projects">
-    <div>
-      <h1>Websites:</h1>
-      <div class="img-carousel">
-        <a target="_blank" href="https://codepen.io/OleksSobol/full/paLjqv/">
-          <img src="assets/img/websites/twitch_tv.PNG" alt="">
-        </a>
-        <a target="_blank" href="https://codepen.io/OleksSobol/full/PQMeKE/">
-          <img src="assets/img/websites/perfect_match.PNG" alt="">
-        </a>
-        <a target="_blank" href="https://codepen.io/OleksSobol/full/eyBBRG/">
-          <img src="assets/img/websites/random_quote.PNG" alt="">
-        </a>
-        <a target="_blank" href="https://codepen.io/OleksSobol/full/JMyeNJ/">
-          <img src="assets/img/websites/weather_app.PNG" alt="">
-        </a>
-        <a target="_blank" href="https://codepen.io/OleksSobol/full/EQqEXd/">
-          <img src="assets/img/websites/images_gallery.PNG" alt="">
-        </a>
+    <script>
+    var config = {
+        type: Phaser.AUTO,
+        width: 800,
+        height: 600,
+        physics: {
+            default: 'arcade',
+            arcade: {
+                gravity: { y: 200 }
+            }
+        },
+        scene: {
+            preload: preload,
+            create: create
+        }
+    };
 
-      </div>
-    </div>
-    <div>
-      <h1>Web Apps:</h1>
-      <div class="img-carousel">
-        <a target="_blank" href="https://codepen.io/OleksSobol/full/wmVard/">
-          <img src="assets/img/apps/simon_game.PNG" alt="">
-        </a>
-        <a target="_blank" href="https://codepen.io/OleksSobol/full/MVzJaG/">
-          <img src="assets/img/apps/pomodoro.PNG" alt="">
-        </a>
-        <a target="_blank" href="https://codepen.io/OleksSobol/full/pLrbGz/">
-          <img src="assets/img/apps/2d_breakout.PNG" alt="">
-        </a>
-        <a target="_blank" href="https://codepen.io/OleksSobol/full/YadQBq/">
-          <img src="assets/img/apps/tic_tac_toe.PNG" alt="">
-        </a>
-        <a target="_blank" href="https://codepen.io/OleksSobol/full/bvYRzv/">
-          <img src="assets/img/apps/color_game.PNG" alt="">
-        </a>
-        <a target="_blank" href="https://codepen.io/OleksSobol/full/vRmxWo/">
-          <img src="assets/img/apps/calculator.PNG" alt="">
-        </a>
-        <a target="_blank" href="https://codepen.io/OleksSobol/full/jzpYpy/">
-          <img src="assets/img/apps/todo_list.PNG" alt="">
-        </a>
-        <a target="_blank" href="https://olekssobol.github.io/PatatapClone/">
-          <img src="assets/img/apps/potapa_clone.PNG" alt="">
-        </a>
-      </div>
-    </div>
-  </div>
-  <script type="text/javascript" src="assets/js/lib/particles.js"></script>
-  <script type="text/javascript" src="assets/js/main.js"></script>
+    var game = new Phaser.Game(config);
+
+    function preload ()
+    {
+        this.load.setBaseURL('http://labs.phaser.io');
+
+        this.load.image('sky', 'assets/skies/space3.png');
+        this.load.image('logo', 'assets/sprites/phaser3-logo.png');
+        this.load.image('red', 'assets/particles/red.png');
+    }
+
+    function create ()
+    {
+        this.add.image(400, 300, 'sky');
+
+        var particles = this.add.particles('red');
+
+        var emitter = particles.createEmitter({
+            speed: 100,
+            scale: { start: 1, end: 0 },
+            blendMode: 'ADD'
+        });
+
+        var logo = this.physics.add.image(400, 100, 'logo');
+
+        logo.setVelocity(100, 200);
+        logo.setBounce(1, 1);
+        logo.setCollideWorldBounds(true);
+
+        emitter.startFollow(logo);
+    }
+    </script>
 
 </body>
-
 </html>
