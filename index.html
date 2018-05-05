@@ -8,7 +8,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
-  <link rel="stylesheet" href="style.css" media="all">
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
   />
@@ -17,13 +17,13 @@
 <body>
   <div id="home">
     <div id="particles-js"> </div>
-      <div class="middle">
-        <h1 class="main-screen-text">Hey there!</h1>
-        <h1 class="main-screen-text">I'm Oleks </h1>
-        <h1 class="main-screen-text"> Front-end Developer</h1>
-        <h1 class="main-screen-text"> And this my portfolio</h1>
-      </div>
-    <div class="social-network">
+    <div class="middle">
+      <h1 class="main-screen-text">Hey there!</h1>
+      <h1 class="main-screen-text">I'm Oleks </h1>
+      <h1 class="main-screen-text"> Front-end Developer</h1>
+      <h1 class="main-screen-text"> And this my portfolio</h1>
+    </div>
+    <div id="contact" class="social-network">
       <ul>
         <li>
           <a target="_blank" href="https://twitter.com/OleksCode">
@@ -47,16 +47,20 @@
     <a href="#home" class="active">Home</a>
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+    <a id="contact_menu" href="#contact">Contact</a>
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navbar()">&#9776;</a>
   </div>
 
   <div id="about">
-    <div>
-      <h1>Something about me</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quidem accusamus dolor saepe quod natus eius? Quas
-        unde pariatur deserunt quae earum, tenetur iure odit soluta. Eveniet illo repellendus odio.</p>
-    </div>
+    <h1>What can I say about myself?</h1>
+
+    <div class="text-about-me">
+      <p>I'm Front-end Developer and I'm enjoying what I'm doing. I like creating web apps, games, and websites.</p>
+      <p>You can see examples of my work in section
+        <a href="#projects">Projects</a>.</p>
+      <p>If you need blog, web app, any kind websites from simple one page to complicated web store - anything can be done.</p>
+      <p>I am fast learner and I am a dedicated to what I do!</p>
+      </div>
   </div>
   <div id="projects">
     <div>
@@ -110,9 +114,11 @@
       </div>
     </div>
   </div>
+  <!-- scripts -->
+  <script type="text/javascript" src="assets/js/lib/anime.min.js"></script>  
   <script type="text/javascript" src="assets/js/lib/particles.js"></script>
   <script type="text/javascript" src="assets/js/main.js"></script>
-
+  <!--  -->
 </body>
 
 </html>
