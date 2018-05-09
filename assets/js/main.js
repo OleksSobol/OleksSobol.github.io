@@ -10,10 +10,11 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 
 $('.img-carousel').slick({
     dots: true,
+    arrows: false,
     infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    variableWidth: true,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    // variableWidth: true,
     //   autoplay: true,
     //   autoplaySpeed: 2500,
     responsive: [
