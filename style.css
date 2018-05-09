@@ -195,6 +195,14 @@ a{
 }
 
 /* Footer */
+footer{
+  padding-bottom: 20px; 
+  word-spacing: 3px;
+  display: block;
+  text-align: center;
+  color: wheat;
+  background-color: rgba(24, 20, 34, 0.877)
+}
 .footerSocNet {
   display: flex;
   flex-direction: row;
@@ -214,11 +222,4 @@ a{
   filter: grayscale(0);  
 }
 
-footer{
-  padding-bottom: 20px; 
-  word-spacing: 3px;
-  display: block;
-  text-align: center;
-  color: wheat;
-  background-color: rgba(24, 20, 34, 0.877)
-}
+/* end of Footer */
