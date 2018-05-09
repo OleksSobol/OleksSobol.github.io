@@ -25,6 +25,8 @@ a{
   background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
 }
 .middle {
+  display: flex;
+  flex-direction: column;
   height: 50%;
   margin-top: 75px;
   text-shadow: 1px 1px 5px #133 ;
@@ -33,6 +35,9 @@ a{
   width: 100%;
   text-align: center;
   z-index: 1;
+}
+.middle h1{
+  justify-content: center;
 }
 #particles-js{
   position: absolute;
@@ -121,7 +126,7 @@ a{
 } 
 
 #about .text-about-me{
-  /* text-shadow: 1px 1px 5px white;  */
+  /* text-shadow: 1px px 1px white;  */
   text-shadow: none;
   color: rgba(0, 0, 0, 0.644);
   border: 10px double darkslategrey;  
@@ -148,7 +153,6 @@ a{
 
 #projects {
   padding-top: 60px;
-  
   display: flex;
   flex-direction: column;
   height: 110vh;
@@ -178,6 +182,18 @@ a{
 }
 .img-carousel a img {
   height: 180px;
+  width: 180px;
+  object-fit: cover;
+
+
+  border-top-style:double;
+  border-bottom-style:double;
+  padding:5px;
+  border-top-color:#7cbfcf;
+  border-bottom-color:#7cbfcf;
+  border-top-width:8px;
+  border-bottom-width:8px;
+  /* border-radius: 10%; */
 }
 .img-carousel a img:hover{
   box-shadow: 0 0 25px yellow;

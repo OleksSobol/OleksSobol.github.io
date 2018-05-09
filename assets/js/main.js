@@ -7,11 +7,12 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     }, 500);
 });
 
+
 $('.img-carousel').slick({
     dots: true,
     infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     variableWidth: true,
     //   autoplay: true,
     //   autoplaySpeed: 2500,
