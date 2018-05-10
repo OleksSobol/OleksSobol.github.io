@@ -14,9 +14,6 @@ $('.img-carousel').slick({
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 4,
-    // variableWidth: true,
-    //   autoplay: true,
-    //   autoplaySpeed: 2500,
     responsive: [
         {
             breakpoint: 1024,
