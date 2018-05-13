@@ -1,11 +1,32 @@
-$(document).on('click', 'a[href^="#"]', function (event) {
-    event.preventDefault();
-    $('a[href^="#"]').removeClass("active");
-    $(this).addClass("active");
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 500);
+$(document).ready(function () {
+	
+	$(document).on("scroll", onScroll);
+
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+        $('a[href^="#"]').removeClass("active");
+        $(this).addClass("active");
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+    });
 });
+
+
+function onScroll(event) {
+	var scrollPosition = $(document).scrollTop();
+	$('.navbar a').each(function () {
+		var currentLink = $(this);
+		var refElement = $(currentLink.attr("href"));
+		if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
+			$('navbar a').removeClass("active");
+			currentLink.addClass("active");
+		}
+		else {
+			currentLink.removeClass("active");
+		}
+	});
+};
 
 
 $('.img-carousel').slick({
