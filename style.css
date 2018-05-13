@@ -192,6 +192,12 @@ a{
 }
 
 /* Footer */
+
+#contact h1{
+  padding: 10px 0;
+  margin: 0;
+}
+
 footer{
   padding-bottom: 20px; 
   word-spacing: 3px;
